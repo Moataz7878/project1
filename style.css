@@ -1,0 +1,584 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: "Roboto", sans-serif;
+    
+  }
+  
+.header{
+    background-image: url(Images/9ab7ba49f276270b815cf7c59ff5b01a.jpg);
+    background-size: cover ;
+    background-repeat : no-repeat;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header .item{
+    text-align: center;
+}
+.header .item .h1{
+    font-size: 45px;
+    font-weight: 800;
+    padding-bottom: 15px;
+    color: white;
+}
+.header .item p{
+    font-size: 20px;
+    padding-bottom: 15px;
+    color: beige;
+}
+.header .item button{
+    padding: 15px 25px;
+    border: none;
+    border-radius: 3px;
+    margin: 10px;
+}
+.header .item .buttonOne:hover{
+background-color: rgb(0, 0, 0);
+color: azure;
+}
+.header .item .buttonTwo{
+    background-color: blue;
+    color: #fffefe;
+}
+.header .item .buttonTwo:hover{
+    background-color: rgb(39, 0, 193);
+    }
+    
+.navbar {
+    width: 100%;
+    background-color: rgba(147, 147, 147,0.8);
+    position: fixed;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 9;
+}
+.navbar .imge{
+    width: 30%;
+}
+.navbar img{
+    width: 10%;
+}
+.navbar ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    width: 45%;
+}
+.navbar ul li{
+    color: red;
+    font-size: 20px;
+    cursor: pointer;
+}
+.navbar ul .one::after{
+    content: '';
+    width: 48px;
+    height: 3px;
+    margin-top: 4px;
+    display: block;
+    background-color: rgb(0, 4, 255);
+}
+.navbar ul .lain{
+    width: 0%;
+    height: 3px;
+    margin-top: 4px;
+    background-color: blue;
+    transition: width;
+    transition-duration: 1s;
+}
+.navbar ul .item:hover .lain{
+    width: 100%;
+}
+
+/* start about */
+.about{
+    margin-top: 50px;
+    width: 100%;
+    text-align: center;
+}
+.about .item{
+    padding: 45px;
+    margin-top: 30px;
+    padding-bottom: 30px;
+}
+.about .item h2{
+    font-size: 38px;
+    font-weight: 700;
+        text-transform: capitalize;
+}
+.about .item .lain{
+    width: 62px;
+    height: 4px;
+    background-color: royalblue;
+    margin: auto;
+    margin-top: 10px;
+
+}
+.about .parent{
+    width: 75%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.about .parent .child{
+    border: solid 1px black;
+    width: 30%;
+    margin: 20px;
+    padding-top: 15px;
+    padding-bottom: 16px;
+    position: relative;
+    margin-top: 50px;
+    overflow: hidden;
+}
+.about .parent .child i{
+     color: #6195ff;
+     font-size: 22px;
+     margin-top: 15px;
+     margin-bottom: 10px;
+}
+.about .parent .child h3{
+    font-size: 27px;
+font-weight: 700;
+margin-bottom: 10px;
+margin-top: 5px;
+z-index: 3;
+}
+.about .parent .child p{
+    margin-bottom: 10px;
+    opacity: 0.6;
+margin-top: 5px;
+    color: #899;
+}
+.about .parent .child h6{
+    cursor: pointer;
+    color: blue;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+.about .parent .child .one{
+    background-color: rgba(5, 4, 4, 0.7);
+    position: absolute;
+    bottom: 100%;
+    
+    right: 100%;
+    width: 100%;
+    height: 100%;
+    z-index: -3;
+ transition:bottom  1s ,right 1s  ;
+}
+.about .parent .child:hover .one {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: #fffefe;
+}
+.about .parent .child:hover h3{
+    color: #fffefe;
+} 
+.about .parent .child:hover {
+    z-index: 5;
+} 
+
+/* start portfolio */
+.portfolio{
+    width: 100%;
+        background-color: #f9f9f9;
+        margin-top: 55px;
+        padding-top: 1px;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 30px;
+}
+.portfolio .itemone{
+    width: 30%;
+    margin: 20px 20px 50px 80px;
+    margin-top: 90px;
+}
+.portfolio .itemone p{
+margin-top: 20px;
+margin-bottom: 15px;
+}
+.portfolio .itemone h2{
+    font-size: 30px;
+    font-weight: 700;
+}
+.portfolio .itemone h2::after{
+    content: "";
+    width: 67px;
+    height: 4px;
+    margin-top: 6px;
+    background-color: royalblue;
+    display: block;
+}
+.portfolio .itemone .parent{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 12px;
+}
+/* .portfolio .itemone .icon{
+    margin-top: 20px;
+    padding: 10px;
+}
+.portfolio .itemone .elemint{
+    margin-top: 20px;
+    padding: 10px;
+} */
+.portfolio .itemone .icon i{
+    color: blue;
+    display: block;
+    margin-top: 5px; 
+    font-size: 18px; 
+}
+.portfolio .itemone .elemint h6{
+    font-size: 18px;
+    padding-top: 7px;
+    padding-top: 1px;
+    padding-left: 8px;
+    opacity: 0.9;
+}
+.portfolio .img{
+    width: 30%;
+    background-color: rgb(255, 255, 255);
+    margin-left: 50px;
+    margin-top: 40px;
+}
+.portfolio .img img{
+    width: 70%;
+    padding-left: 15%;
+}
+
+/* start service */
+.service {
+width: 100%;
+background-color:#ffffff;
+margin-top: 40px;
+margin-bottom:20px ;
+text-align: center;
+}
+.service h2{
+    font-size: 32px;
+    font-weight: 700;
+    padding-top: 40px;
+    padding-bottom: 7px;
+}
+.service h2::after{
+    content: "";
+    width: 80px;
+    height: 4px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    background-color: #6195ff;
+    display: block ;
+    margin: auto;
+}
+.service .parent {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+}
+.service .parent .imge{
+    width: 28%;
+    background-color: #ffffff;
+    margin: 10px;
+    position: relative;
+}
+.service .parent .imge img{
+    width: 100%;
+}
+.service .parent .imge .failter{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(4, 4, 4, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    opacity: 0;
+    transition:opacity 1s  ;
+
+}
+.service .parent .imge .failter h5{
+    color: rgb(255, 0, 0);
+    padding-bottom: 15px;
+    font-size: 19px;
+    opacity: 0;
+    transition:opacity 4s  ;
+
+}
+.service .parent .imge .failter h3{
+    color: white;
+    font-size: 28px;
+    padding-bottom: 19px;
+    padding-top: 10px;
+opacity: 0;
+transition:opacity 6s  ;
+
+}
+.service .parent .imge .failter i{
+    color: #6195ff;
+    font-size: 20px;
+}
+.service .parent .imge:hover .failter{
+opacity: 1;
+}
+.service .parent .imge:hover h5{
+    opacity: 1;
+}
+.service .parent .imge:hover h3{
+    opacity: 1;
+}
+
+/* strat price  */
+
+.price{
+width: 100%;
+margin-top: 30px;
+text-align: center;
+margin-top: 70px;
+}
+.price .item{
+    margin: auto;
+}
+.price .item h2{
+    font-size: 30px;
+    font-weight: 700;
+    padding-top: 20px;
+}
+.price .item h2::after{
+    content: '';
+    width: 80px;
+    height: 3px;
+    background-color: #4680f5;
+    display: block;
+    margin:auto ;
+    margin-top: 6px;
+}
+.price .parent{
+    width: 86%;
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+.price .parent .child{
+    border:solid 1px black;
+    padding: 6px;
+    width: 27%;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    margin: 11px;
+    overflow: hidden;
+    
+}
+.price .parent .child h3{
+    font-size: 25px;
+    font-weight: 700;
+    padding-top: 8px;
+    padding-bottom: 5px;
+   z-index: 3;
+transition:color 1.8s ;
+}
+.price .parent .child p{
+   opacity: 0.8;
+   padding-bottom: 15px;
+   padding-top: 3px;
+   z-index: 2;
+transition:color 1.6s ;
+   
+}
+.price .parent .child i{
+   font-size: 25px;
+   color: #4680f5;
+   margin-top: 6px;
+   margin-right: 4px;
+   margin-left: 4px;
+   z-index: -4;
+   transition: z-index 1.6s ;
+}
+.price .parent .child .fulter{
+    background-color: rgba(16, 16, 16, 0.6);
+    position: absolute;
+    bottom: 100%;
+    right: 100%;
+    width: 100%;
+    height: 100%;
+    z-index: -3;
+ transition:bottom  1.4s ,right 1.5s  ;
+}
+.price .parent .child:hover .fulter{
+    bottom: 0;
+    right: 0;
+}
+.price .parent .child:hover h3{
+ color: white;
+}
+.price .parent .child:hover p{
+ color: white;
+}
+.price .parent .child:hover i{
+ z-index: 2;
+}
+
+/* start blog */
+.blog{
+    width: 100%;
+    background-color: #899;
+    background-image: url(Images/counters-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment:fixed ;
+    display: flex;
+    justify-content: center;
+}
+.blog .item{
+    text-align: center;
+    padding: 20px;
+    margin: 40px 50px;
+}
+.blog .item i {
+    color: #4680f5;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 7px;
+}
+.blog .item h3{
+    font-size: 34px;
+    padding-top: 7px;
+    padding-bottom: 2px;
+    color: #f9f9f9;
+
+}
+.blog .item p{
+    font-size: 20px;
+    color: #f9f9f9;
+}
+
+/* start team */
+.team{
+    /* margin-top: 40px; */
+    padding: 2;
+    text-align: center;
+    width: 100%;
+    background-color: #e8e8e8;
+    padding-bottom: 46px;
+    padding-top: 20px;
+    margin-top: 10px;
+}
+.team h2{
+    font-size: 31px;
+    font-weight: 700;
+    padding-top: 20px;
+}
+.team h2::after{
+    content: '';
+    width: 65px;
+    height: 4px;
+    background-color: #6195ff;
+    display: block;
+    margin: auto;
+    margin-top: 7px;
+}
+.team .parent{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    padding-top: 45px;
+    justify-content: center;
+}
+.team .card{
+    border: solid 1px black;
+    padding: 18px 60px;
+    text-align: center;
+    margin-top: 25px;
+    margin: 20px;
+    background-color: #e8e8e8;
+position: relative;
+margin: 20px 20px;
+overflow: hidden;
+}
+.team .card h3{
+    color: #999;
+    padding-top: 6px;
+    font-size: 18px;
+}
+.team .card .one{
+    width: 85px;
+    height: 85px;
+    border: solid 2px rgb(45, 8, 234);
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    z-index: -1;
+}
+.team .card .one h3{
+    padding-top: 4px;
+    padding-bottom: 1px;
+    font-size: 32px;
+    font-weight: 800;
+    color: #030303;
+}
+.team .card .one h4{
+    color: #080808;
+    font-weight: 700;
+    font-size: 18px;
+}
+.team .parent .card p{
+    color: #999;
+padding: 4px 0px;
+}
+.team .parent .card button{
+    padding: 10px 21px;
+    margin-top: 12px;
+    margin-bottom: 6px;
+    background-color: white;
+    border:solid 2px #4680f5;
+    z-index: 0;
+}
+.team .parent .card .fulter{
+    background-color: rgba(159, 79, 108, 0.6);
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+ transition:bottom  1s  ;
+}
+.team .parent .card:hover .fulter{
+    bottom: 0;
+}
+.team .parent .card:hover .one{
+    z-index: 4;
+}
+.footer{
+    width: 100%;
+    background-color: #4c4d52;
+    /* padding: 10px; */
+    text-align: center;
+}
+.footer p{
+padding-top: 35px;
+padding-bottom: 25px;
+color: #dcdbdb;
+}
+.footer span{
+    color: #4680f5;
+}
